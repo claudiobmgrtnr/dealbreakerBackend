@@ -1,0 +1,19 @@
+{
+  "name": "dealbreaker_backend",
+  "version": "0.0.1",
+  "description": "This is the backend for Dealbreaker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.4",
+    "graphql-request": "^1.8.2",
+    "mongoose": "^5.4.2",
+    "node-fetch": "^2.3.0"
+  }
+}

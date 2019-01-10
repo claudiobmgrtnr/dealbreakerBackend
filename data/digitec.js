@@ -32,7 +32,7 @@ const getGalaxusData = async function() {
     price: data.liveShoppingPreviews.liveShoppings[0].product.pricing.price.amountIncl,
     priceOld: data.liveShoppingPreviews.liveShoppings[0].product.pricing.insteadOfPrice.price.amountIncl,
     reduction: data.liveShoppingPreviews.liveShoppings[0].product.pricing.priceRebateFraction,
-    link: `https://www.digitec.ch/de/LiveShopping/${data.liveShoppingPreviews.liveShoppings[0].liveShoppingId}`,
+    link: `https://www.galaxus.ch/de/LiveShopping/${data.liveShoppingPreviews.liveShoppings[0].liveShoppingId}`,
   }
   return galaxusData;
 }

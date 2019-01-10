@@ -8,10 +8,29 @@ const getHtml = async function() {
     .then(body => Promise.resolve(body));
 };
 
-const parseData = async function() {
+const getDayDealData = async function() {
   const html = await getHtml();
   const $ = cheerio.load(html);
-  console.log($('.product-description__title1').html());
+  const data = {
+    imageUrl: $('.product-img-main-pic').attr('src'),
+    title: $('.product-description__title1').text(),
+    subTitle: $('.product-description__title2').text(),
+    price: extractPrice($('.product-pricing__prices-new-price')),
+    priceOld: extractPrice($('.product-pricing__prices-old-price')),
+    reduction: `-${$('.js-pricetag').text()}%`,
+    link: 'https://www.daydeal.ch'
+  }
+  return data;
 }
 
-parseData();
+const extractPrice = ($priceDiv) => {
+  // remove the children to avoid superscript 2 getting in the price
+  $priceDiv.children().remove();
+  // get all numbers of the price
+  const cleanNumbers = $priceDiv.text().match(/(\d+)/g);
+  // add - to second match if there is no number to have a consistent output
+  cleanNumbers[1] ? null : cleanNumbers[1] = '–'
+  return `${cleanNumbers[0]}.${cleanNumbers[1]}`;
+}
+
+module.exports.getDayDealData = getDayDealData;

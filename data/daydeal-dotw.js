@@ -3,12 +3,12 @@ const cheerio = require('cheerio');
 
 
 const getHtml = async function() {
-  return await fetch('https://www.daydeal.ch/')
+  return await fetch('https://www.daydeal.ch/deal-of-the-week')
     .then(res => res.text())
     .then(body => Promise.resolve(body));
 };
 
-const getDayDealData = async function() {
+const getDayDealDOTWData = async function() {
   const html = await getHtml();
   const $ = cheerio.load(html);
   const data = {
@@ -18,7 +18,7 @@ const getDayDealData = async function() {
     price: extractPrice($('.product-pricing__prices-new-price')),
     priceOld: extractPrice($('.product-pricing__prices-old-price')),
     reduction: `-${$('.js-pricetag').text()}%`,
-    link: 'https://www.daydeal.ch'
+    link: 'https://www.daydeal.ch/deal-of-the-week'
   }
   return data;
 }
@@ -33,4 +33,4 @@ const extractPrice = ($priceDiv) => {
   return `${cleanNumbers[0]}.${cleanNumbers[1]}`;
 }
 
-module.exports.getDayDealData = getDayDealData;
+module.exports.getDayDealDOTWData = getDayDealDOTWData;

@@ -1,15 +1,18 @@
 const express = require('express');
 const app = express();
-const accumulator = require('./data/accumulator').getData
+const cors = require('cors')
 
+const db = require('./db/db');
+const cache = require('./utils/cache');
+
+db.init();
+cache.init();
 
 const port = process.env.PORT || 8081;
 const router = express.Router();
 
-router.get('/deals', (req, res) => {
-  accumulator().then((data) => {
-    res.json(data);
-  });
+router.get('/deals', cors(), (req, res) => {
+  res.json(db.getData());
 });
 
 // REGISTER OUR ROUTES -------------------------------
@@ -17,5 +20,5 @@ router.get('/deals', (req, res) => {
 app.use('/api', router);
 
 // START THE SERVER
-// =============================================================================
+// ====================================================
 app.listen(port);

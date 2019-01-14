@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "imageUrl": "https://static.digitecgalaxus.ch/Files/1/8/1/6/5/5/0/8/UBVBa-7VUE-i5Djte0yBlA.r.jpg?fit=inside%7C384:260",
+      "title": "XPS 15 9570 (15.60\", UHD, Intel Core i7-8750H, 16GB, SSD)",
+      "subTitle": "Dell",
+      "price": 1599,
+      "priceOld": 2299,
+      "reduction": 0.31,
+      "link": "https://www.digitec.ch/de/LiveShopping/78"
+    },
+    {
+      "imageUrl": "https://static.digitecgalaxus.ch/Files/7/6/3/3/0/4/8515.jpg?fit=inside%7C384:260",
+      "title": "Rolltasche Allround-Set",
+      "subTitle": "PB Swiss Tools",
+      "price": 91,
+      "priceOld": 121,
+      "reduction": 0.25,
+      "link": "https://www.galaxus.ch/de/LiveShopping/82"
+    },
+    {
+      "imageUrl": "https://static.daydeal.ch/images/deals/pictures/613fa348283b514d2e907998b8e09a5bb3a698cc.jpg",
+      "title": "Backup-Charger",
+      "subTitle": "Maktar QubiiMaktar Qubii",
+      "price": "35.–",
+      "priceOld": "59.–",
+      "reduction": "-41%",
+      "link": "https://www.daydeal.ch"
+    },
+    {
+      "imageUrl": "https://static.daydeal.ch/images/deals/pictures/aef0da37f726cfbb07ed8904d34664d0a104300f.jpg",
+      "title": "75-Zoll QLED-Fernseher",
+      "subTitle": "Samsung QE75Q8DNATXZGSamsung QE75Q8DNATXZG",
+      "price": "2499.–",
+      "priceOld": "3199.–",
+      "reduction": "-22%",
+      "link": "https://www.daydeal.ch/deal-of-the-week"
+    }
+  ]
+}

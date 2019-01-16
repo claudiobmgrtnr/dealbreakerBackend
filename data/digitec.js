@@ -15,8 +15,8 @@ const getDigitecData = async function() {
     imageUrl: data.liveShoppingPreviews.liveShoppings[1].product.imageUrl,
     title: data.liveShoppingPreviews.liveShoppings[1].product.name,
     subTitle: data.liveShoppingPreviews.liveShoppings[1].product.brandName,
-    price: data.liveShoppingPreviews.liveShoppings[1].product.pricing.price.amountIncl,
-    priceOld: data.liveShoppingPreviews.liveShoppings[1].product.pricing.insteadOfPrice.price.amountIncl,
+    price: `${data.liveShoppingPreviews.liveShoppings[1].product.pricing.price.amountIncl}.–`,
+    priceOld: `${data.liveShoppingPreviews.liveShoppings[1].product.pricing.insteadOfPrice.price.amountIncl}.–`,
     reduction: data.liveShoppingPreviews.liveShoppings[1].product.pricing.priceRebateFraction,
     link: `https://www.digitec.ch/de/LiveShopping/${data.liveShoppingPreviews.liveShoppings[1].liveShoppingId}`,
   }
@@ -29,8 +29,8 @@ const getGalaxusData = async function() {
     imageUrl: data.liveShoppingPreviews.liveShoppings[0].product.imageUrl,
     title: data.liveShoppingPreviews.liveShoppings[0].product.name,
     subTitle: data.liveShoppingPreviews.liveShoppings[0].product.brandName,
-    price: data.liveShoppingPreviews.liveShoppings[0].product.pricing.price.amountIncl,
-    priceOld: data.liveShoppingPreviews.liveShoppings[0].product.pricing.insteadOfPrice.price.amountIncl,
+    price: `${data.liveShoppingPreviews.liveShoppings[0].product.pricing.price.amountIncl}.–`,
+    priceOld: `${data.liveShoppingPreviews.liveShoppings[0].product.pricing.insteadOfPrice.price.amountIncl}.–`,
     reduction: data.liveShoppingPreviews.liveShoppings[0].product.pricing.priceRebateFraction,
     link: `https://www.galaxus.ch/de/LiveShopping/${data.liveShoppingPreviews.liveShoppings[0].liveShoppingId}`,
   }

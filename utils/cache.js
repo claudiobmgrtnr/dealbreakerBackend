@@ -9,7 +9,7 @@ const init = () => {
   });
 
   // get data every 5 minutes
-  cron.schedule('*/5 * * * *', () => {
+  cron.schedule('*/30 * * * *', () => {
     accumulator().then((result) => {
       db.setData(result.data);
     });

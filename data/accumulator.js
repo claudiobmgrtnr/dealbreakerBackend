@@ -2,6 +2,7 @@ const getDigitecData = require('./digitec').getDigitecData;
 const getGalaxusData = require('./digitec').getGalaxusData;
 const getDayDealData = require('./daydeal').getDayDealData;
 const getDayDealDOTWData = require('./daydeal-dotw').getDayDealDOTWData;
+const getQoqaData = require('./qoqa').getQoqaData;
 
 const getData = async () => {
   const data = {
@@ -10,6 +11,7 @@ const getData = async () => {
       await getGalaxusData(),
       await getDayDealData(),
       await getDayDealDOTWData(),
+      await getQoqaData(),
     ]
   }
   return data

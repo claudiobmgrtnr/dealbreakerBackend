@@ -8,7 +8,7 @@ const cache = require('./utils/cache');
 db.init();
 cache.init();
 
-const port = process.env.PORT || 8081;
+const port = process.env.PORT || 80;
 const router = express.Router();
 
 router.get('/deals', cors(), (req, res) => {

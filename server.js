@@ -8,11 +8,15 @@ const cache = require('./utils/cache');
 db.init();
 cache.init();
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8081;
 const router = express.Router();
 
 router.get('/deals', cors(), (req, res) => {
   res.json(db.getData());
+});
+
+router.get('/lastupdate', cors(), (req, res) => {
+  res.json(db.getTimeStamp());
 });
 
 // REGISTER OUR ROUTES -------------------------------

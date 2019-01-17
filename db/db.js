@@ -20,7 +20,19 @@ const getData = () => {
   return data;
 }
 
+const setTimeStamp = () => {
+  const date = new Date();
+  const time = `${date.getHours()}:${date.getMinutes()}`
+  db.set('lastUpdate', time).write();
+}
+
+const getTimeStamp = () => {
+  const lastUpdate = db.get('lastUpdate').value()
+  return lastUpdate;
+}
 
 module.exports.init = init;
 module.exports.setData = setData;
 module.exports.getData = getData;
+module.exports.setTimeStamp = setTimeStamp;
+module.exports.getTimeStamp = getTimeStamp;

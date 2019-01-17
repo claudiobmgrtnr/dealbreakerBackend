@@ -13,8 +13,8 @@ const getDayDealData = async function() {
   const $ = cheerio.load(html);
   const data = {
     imageUrl: $('.product-img-main-pic').attr('src'),
-    title: $('.product-description__title1').html(),
-    subTitle: $('.product-description__title2').text(),
+    title: $($('.product-description__title2').get(0)).text(),
+    subTitle: $($('.product-description__title1').get(0)).text(),
     price: extractPrice($('.product-pricing__prices-new-price')),
     priceOld: extractPrice($('.product-pricing__prices-old-price')),
     reduction: `-${$('.js-pricetag').text()}%`,

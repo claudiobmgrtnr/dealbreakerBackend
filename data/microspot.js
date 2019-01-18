@@ -2,28 +2,36 @@ const puppeteer = require('puppeteer');
 const cheerio = require('cheerio');
 
 
-const getMarkup = async (url) => {
-  const browser = await puppeteer.launch({ headless: true })
+const getMarkup = async (browser, url, close) => {
   const page = await browser.newPage()
   
   const navigationPromise = page.waitForNavigation()
   
-  await page.setViewport({ width: 1680, height: 862 })
+  await page.setViewport({ width: 1680, height: 1200 });
   
   await page.goto(url);
-  const markup = await page.evaluate(() => document.documentElement.innerHTML);
+  const markup = await page.evaluate(() => Promise.resolve(document.documentElement.innerHTML));
   
   await navigationPromise
-  await browser.close()
+  if (close) {
+    await browser.close()
+  }
   return markup;
 }
 
+const startBrowser = async () => {
+  const browser = await puppeteer.launch({ headless: true });
+  return browser;
+}
+
 const getMicrospotData = async () => {
-  let html = await getMarkup('http://microspot.ch/de');
+  const browser = await startBrowser();
+  let html = await getMarkup(browser, 'http://microspot.ch/de', false);
   let $ = cheerio.load(html);
 
   const href = getHappyDayProductUrl($);
-  html = await getMarkup(`http://microspot.ch/de${href}`);
+  
+  html = await getMarkup(browser, `http://microspot.ch/de${href}`, true);
   $ = cheerio.load(html);
 
   const microspotData = {

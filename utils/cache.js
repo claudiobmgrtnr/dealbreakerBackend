@@ -9,8 +9,8 @@ const init = () => {
     db.setTimeStamp();
   });
 
-  // get data every 30 minutes
-  cron.schedule('*/30 * * * *', () => {
+  // get data every 10-15 minutes
+  cron.schedule('10-15 * * * *', () => {
     accumulator().then((result) => {
       db.setData(result.data);
       db.setTimeStamp();

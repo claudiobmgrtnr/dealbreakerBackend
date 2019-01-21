@@ -23,6 +23,7 @@ const getData = () => {
 const setTimeStamp = () => {
   const date = new Date();
   const time = `${date.getHours()}:${date.getMinutes()}`
+  console.log('new time set', time);
   db.set('lastUpdate', time).write();
 }
 

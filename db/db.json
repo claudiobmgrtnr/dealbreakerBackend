@@ -1,40 +1,68 @@
 {
   "data": [
     {
-      "imageUrl": "https://static.digitecgalaxus.ch/Files/1/8/1/6/5/5/0/8/UBVBa-7VUE-i5Djte0yBlA.r.jpg?fit=inside%7C384:260",
-      "title": "XPS 15 9570 (15.60\", UHD, Intel Core i7-8750H, 16GB, SSD)",
-      "subTitle": "Dell",
-      "price": 1599,
-      "priceOld": 2299,
-      "reduction": 0.31,
+      "imageUrl": "https://static.digitecgalaxus.ch/Files/8/5/2/1/7/3/6/2017_HF85J_6%201.jpg?fit=inside%7C384:260",
+      "title": "HF85JS Allegro, WebOS 3.5 (Full HD, 1500lm, Laser, 0.19:1, DLP, Laser)",
+      "subTitle": "LG",
+      "price": "1399.–",
+      "priceOld": "2199.–",
+      "reduction": 0.37,
       "link": "https://www.digitec.ch/de/LiveShopping/78"
     },
     {
-      "imageUrl": "https://static.digitecgalaxus.ch/Files/7/6/3/3/0/4/8515.jpg?fit=inside%7C384:260",
-      "title": "Rolltasche Allround-Set",
-      "subTitle": "PB Swiss Tools",
-      "price": 91,
-      "priceOld": 121,
-      "reduction": 0.25,
+      "imageUrl": "https://static.digitecgalaxus.ch/Files/1/0/4/6/8/2/5/9/swarovski-attract-set-5113468.jpeg?fit=inside%7C384:260",
+      "title": "Attract Set (Poliert)",
+      "subTitle": "Swarovski",
+      "price": "89.–",
+      "priceOld": "129.–",
+      "reduction": 0.32,
       "link": "https://www.galaxus.ch/de/LiveShopping/82"
     },
     {
-      "imageUrl": "https://static.daydeal.ch/images/deals/pictures/613fa348283b514d2e907998b8e09a5bb3a698cc.jpg",
-      "title": "Backup-Charger",
-      "subTitle": "Maktar QubiiMaktar Qubii",
-      "price": "35.–",
-      "priceOld": "59.–",
-      "reduction": "-41%",
+      "imageUrl": "https://static.daydeal.ch/images/deals/pictures/1a95bfb5ccab811aa1f393e8e68b71fa8c9c5ec5.jpg",
+      "title": "Netgear Orbi RBK20",
+      "subTitle": "WLAN-Mesh-System",
+      "price": "189.–",
+      "priceOld": "249.–",
+      "reduction": "-24%",
       "link": "https://www.daydeal.ch"
     },
     {
       "imageUrl": "https://static.daydeal.ch/images/deals/pictures/aef0da37f726cfbb07ed8904d34664d0a104300f.jpg",
-      "title": "75-Zoll QLED-Fernseher",
-      "subTitle": "Samsung QE75Q8DNATXZGSamsung QE75Q8DNATXZG",
+      "title": "Samsung QE75Q8DNATXZG",
+      "subTitle": "75-Zoll QLED-Fernseher",
       "price": "2499.–",
       "priceOld": "3199.–",
       "reduction": "-22%",
       "link": "https://www.daydeal.ch/deal-of-the-week"
+    },
+    {
+      "imageUrl": "https://static.blickdeal.ch/images/deals/pictures/6a40cd021a07a31319fd0f7fa0f760a880df69cb.jpg",
+      "title": "Compex Sport",
+      "subTitle": "Elektrostimulationsgerät",
+      "price": "179.–",
+      "priceOld": "399.–",
+      "reduction": "-55%",
+      "link": "https://www.blickdeal.ch"
+    },
+    {
+      "imageUrl": "https://www.microspot.ch/content/images/h71/hb7/8976154984478.jpg",
+      "title": "SANDISK Ultra Dual Drive m3.0 256 GB",
+      "subTitle": "Hersteller-Nr. SDDD3-256G-G46",
+      "price": "CHF49.00",
+      "priceOld": false,
+      "reduction": false,
+      "link": "http://microspot.ch/de/de/computer-software/speicher-laufwerke/usb-sticks--C563000/sandisk-ultra-dual-drive-m3-0-256-gb--P0001474623"
+    },
+    {
+      "imageUrl": "https://static.qoqa.ch/component/slider/media/images/000/067/573/original/cover-web-1.jpg?1547630936",
+      "title": "BROTHER L-3770CDW Kompaktes 4-in-1 Farb-Multifunktionsgerät",
+      "subTitle": "Wir machen Druck!",
+      "price": "CHF 299.–",
+      "priceOld": false,
+      "reduction": false,
+      "link": "https://www.qoqa.ch/de"
     }
-  ]
+  ],
+  "lastUpdate": "15:42"
 }
